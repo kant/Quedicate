@@ -17,6 +17,9 @@ Contact Us:
 == ACKNOWLEDGMENTS ==
 
 QR Code Scanner is based on implementation of QR Code 2-D barcode generator by Dominik Dzienia.
+Copyright (C) 2010 by Dominik Dzienia
+http://sourceforge.net/projects/phpqrcode/
+http://phpqrcode.sourceforge.net/
 
 Based on C libqrencode library (ver. 3.1.1) 
 Copyright (C) 2006-2010 by Kentaro Fukuchi
