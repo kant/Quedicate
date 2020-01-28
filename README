@@ -1,4 +1,6 @@
-This project is the sole property of Ghazali (aka GShacklebolt) and Md Kasif. We have created a system for plaform ticket e-booking with hopes to eliminate the need to stand in long queues. The name of our project is a portmanteau of the words Queue and Eradicate: Quedicate.
+This project is the sole property of Ghazali (aka GShacklebolt) and Md Kasif (aka Kashif Morningstar). 
+We have created a system for plaform ticket e-booking with hopes to eliminate the need to stand in long queues. 
+The name of our project is a portmanteau of the words Queue + Eradicate: Quedicate.
 
 The QR Code generator is based on a Github project which is a copyright of Dominik Dzienia which itself is pure-php
 LGPL-licensed implementation based on C libqrencode by Kentaro Fukuchi. 
