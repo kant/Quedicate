@@ -14,7 +14,7 @@ if(isset($_SESSION["data"]))
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 <title>Buy Page</title>
-<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
 	.centralize{

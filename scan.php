@@ -16,7 +16,7 @@ $fare=$_POST["fare"];
 
 <!-- Favicons
 ================================================== -->
-<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <script src="https://kit.fontawesome.com/2ae58b001f.js" crossorigin="anonymous"></script>
 	<title>Scan QR Code</title>

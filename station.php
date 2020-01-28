@@ -13,7 +13,7 @@ session_start();
 
 <!-- Favicons
 ================================================== -->
-<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
 <title>Untitled Document</title>
