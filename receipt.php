@@ -13,7 +13,7 @@ session_start();
 	}
 	else
 	{
-		//This is will run when the receipt page is generated for the first time
+		//This will run when the receipt page is generated for the first time
 		$qr_id = $_REQUEST[ "data" ];
 		$person=($_REQUEST["txn_amt"])/10;
 		$flag=false;
