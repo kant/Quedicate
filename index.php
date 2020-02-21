@@ -1,7 +1,5 @@
 <?php
 session_start();
-if(isset($_SESSION["data"]))
-	echo "<script>window.location.href='destroy.php';</script>";
 ?>
 <!doctype html>
 <html>
@@ -14,7 +12,7 @@ if(isset($_SESSION["data"]))
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 <title>Buy Page</title>
-<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
 	.centralize{
@@ -41,6 +39,12 @@ if(isset($_SESSION["data"]))
 </head>
 
 <body>
+	<?php
+	require("common/connection.php");
+	if(isset($_SESSION["data"]))
+		echo "<script>window.location.href='destroy.php';</script>";
+	permit();
+	?>
 	<div class="container" align="center">
 		<h1>Welcome to Quedicate: E-Platform ticketing</h1>
 		
