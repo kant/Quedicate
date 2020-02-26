@@ -11,7 +11,6 @@
 	$sql="insert into qr_code (qr_id,station) values ('$id','$station')";
 	mysqli_query($con,$sql);
 	mysqli_close($con);
-
 	$PNG_TEMP_DIR = dirname(__FILE__).DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR;
     
     //html PNG location prefix

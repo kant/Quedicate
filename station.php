@@ -16,19 +16,47 @@ session_start();
 <link rel="icon" href="images/icon.png" type="image/x-icon" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
-<title>Untitled Document</title>
+<title>Station Info</title>
+<style>
+	.blue{
+		background-color: aqua;
+	}
+	.station>input[type=text]{
+		background-color: #f1f1f1;
+		border-radius: 10px;
+		padding: 4px 10px 4px 10px;
+	}
+	.station>label,.station>input[type=submit]{
+		width:100px !important;
+		border-radius: 10px;
+	}
+</style>
 </head>
 
 <body>
-	<h1>Enter Station Detail</h1><hr>
-	<form method="post" action="#">
-		<label>Station Name: </label>
-		<input type="text" name="name"><br>
-		<input type="submit" name="go" value="go">
-	</form>
+	<div class="container" align="center">
+		<h1>Enter Station Detail</h1><hr>
+		
+			<form method="post" action="#" class="station">
+				<label>Station Name: </label><br>
+				<input type="text" name="name"><br>
+				<br>
+				<input type="submit" class="blue form-control" name="go" value="Submit">
+			</form>
+	</div>
+	<!--
+	<div class="container" align="center" class="station">
+		<h1>Enter Station Detail</h1><hr>
+		<form method="post" action="#">
+			<label class="form-control">Station Name: </label>
+			<input type="text" name="name"><br>
+			<input type="submit" class="blue form-control" name="go" value="go">
+		</form>
+	</div>
+-->
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="javascript/bootstrap.min.js"></script>
-</body>
 </html>
 <?php
 if(isset($_POST["go"]))

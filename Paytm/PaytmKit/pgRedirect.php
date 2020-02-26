@@ -25,7 +25,8 @@ $paramList["TXN_AMOUNT"] = $TXN_AMOUNT;
 $paramList["WEBSITE"] = PAYTM_MERCHANT_WEBSITE;
 
 //$paramList["CALLBACK_URL"] = "http://localhost:81/programs/Quedicate/Paytm/PaytmKit/pgResponse.php";
-$paramList["CALLBACK_URL"] = "http://quedicate.dx.am/Paytm/PaytmKit/pgResponse.php";
+//$paramList["CALLBACK_URL"] = "http://quedicate.dx.am/Paytm/PaytmKit/pgResponse.php";
+$paramList["CALLBACK_URL"] = "https://quedicate.ml/Paytm/PaytmKit/pgResponse.php";
 
 /*
 $paramList["MSISDN"] = $MSISDN; //Mobile number of customer

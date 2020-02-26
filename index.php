@@ -13,14 +13,10 @@ if(isset($_SESSION["data"]))
 ================================================== -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-<title>Buy Page</title>
+<title>Quedicate: Ticket Info</title>
 <link rel="icon" href="images/icon.png" type="image/x-icon" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
-	.centralize{
-		position: fixed;
-		left: 40%;
-	}
 	.blue{
 		background-color: aqua;
 	}
