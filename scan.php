@@ -95,7 +95,9 @@ $fare=$_POST["fare"];
     scanner.addListener('scan',function(content){
         //alert(content);
         document.getElementById("ORDER_ID").value=content;
-        document.paytmForm.submit();
+        var snd='<audio autoplay=true><source src="./images/ping.mp3"></audio>';
+        $('body').append(snd);
+        inter=setTimeout(function(){ document.paytmForm.submit() }, 1000);
      });
     Instascan.Camera.getCameras().then(function (cameras){
         if(cameras.length>0){
