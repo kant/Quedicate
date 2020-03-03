@@ -71,6 +71,7 @@
 <!-- Favicons
 ================================================== -->
 <link rel="icon" href="images/icon.png" type="image/x-icon" />
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
 <title>Scan This</title>
@@ -113,7 +114,7 @@
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #222222;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
@@ -168,15 +169,21 @@
 		<div class="loader"></div>	
 	</div>
 	
-	<div id="qr_display" class="container" align="center">
-		<img src="<?php echo $image_path ; ?>">
-		<hr>
+	<div class="myBackground">
+		<div id="qr_display" class="myForeground" style="top:50%!important;" align="center">
+			<h1>Scan this code on your mobile phone</h1>
+			<img src="<?php echo $image_path ; ?>">
+			<hr>
+		</div>
 	</div>
+	</div>
+    <?php
+    include("common/footer.php");
+    ?>
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="javascript/bootstrap.min.js"></script>
-</body>
 </html>
-	
-	<?php
-	echo "<script>startz();</script>";
-	?>
+<?php
+echo "<script>startz();</script>";
+?>

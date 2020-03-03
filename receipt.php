@@ -80,6 +80,7 @@ session_start();
 ================================================== -->
 <link rel="icon" href="images/icon.png" type="image/x-icon" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/receipt-style.css">
 <link rel="stylesheet" href="css/style.css">
 <title>Receipt</title>
 <script>
@@ -132,38 +133,41 @@ session_start();
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="container" align="center">
-	
-	<div id="clockdiv"> 
-		<h1> Ticket valid at station: </h1>
-		<div>
-			<span><b><?php echo $station; ?></b></span>
+<div class="myBackground">
+	<div class="myForeground" style="top:65%!important;" align="center">
+		<div id="clockdiv"> 
+			<h1> Ticket valid at station: </h1>
+			<div>
+				<span><b><?php echo $station; ?></b></span>
+			</div>
+
+			<h1> Ticket valid for person(s): </h1>
+			<div>
+				<span><b><?php echo $person; ?></b></span>
+			</div>
+
+			<h1> Ticket valid for: </h1>
+
+			<div> 
+				<span class="hours" id="hour"></span> 
+				<div class="smalltext">Hours</div> 
+			</div> 
+			<div> 
+				<span class="minutes" id="minute"></span> 
+				<div class="smalltext">Minutes</div> 
+			</div> 
+			<div> 
+				<span class="seconds" id="second"></span> 
+				<div class="smalltext">Seconds</div> 
+			</div> 
 		</div>
-		
-		<h1> Ticket valid for person(s): </h1>
-		<div>
-			<span><b><?php echo $person; ?></b></span>
-		</div>
-		
-		<h1> Ticket valid for: </h1>
-		
-		<div> 
-			<span class="hours" id="hour"></span> 
-			<div class="smalltext">Hours</div> 
-		</div> 
-		<div> 
-			<span class="minutes" id="minute"></span> 
-			<div class="smalltext">Minutes</div> 
-		</div> 
-		<div> 
-			<span class="seconds" id="second"></span> 
-			<div class="smalltext">Seconds</div> 
-		</div> 
+		<p id="demo"></p> 
 	</div>
 </div>
-
-<p id="demo"></p> 
+<?php
+include("common/footer.php");
+?>
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="javascript/bootstrap.min.js"></script>
-</body>
 </html>
