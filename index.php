@@ -1,6 +1,5 @@
 <?php
-session_start();
-if(isset($_SESSION["data"]))
+if(isset($_COOKIE["data"]))
 	echo "<script>window.location.href='destroy.php';</script>";
 ?>
 <!doctype html>

@@ -1,14 +1,11 @@
-<?php
-session_start();
-?>
 <!doctype html>
 <html>
 <?php
 	require("common/connection.php" );
-	if(isset($_SESSION["data"]))
+	if(isset($_COOKIE["data"]))
 	{
 		//This will run if page is refreshed
-		$qr_id=$_SESSION["data"];
+		$qr_id=$_COOKIE["data"];
 		$flag=true;
 	}
 	else
@@ -22,7 +19,7 @@ session_start();
 	$result = mysqli_query( $con, $sql );
 	if ( $row = mysqli_fetch_array( $result ) ) 
 	{
-		if ( $row[ "counter" ] == 0||$flag==true) 
+		if ( $row["counter"] == 0||$flag==true) 
 		{
 			
 			$station=$row["station"];
@@ -37,7 +34,7 @@ session_start();
 				
 				$sql = "update qr_code set counter='1', time='$expire_time', person='$person' where qr_id='$qr_id'";
 				mysqli_query( $con, $sql );
-				
+				setcookie("data",$qr_id,$expire_time,"/");
 				$expire_time=date("M d, Y H:i:s",$expire_time);
 			}
 			else
