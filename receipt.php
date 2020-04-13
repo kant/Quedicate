@@ -1,11 +1,9 @@
-<!doctype html>
-<html>
 <?php
 	require("common/connection.php" );
-	if(isset($_COOKIE["data"]))
+	if(isset($_COOKIE["id_data"]))
 	{
 		//This will run if page is refreshed
-		$qr_id=$_COOKIE["data"];
+		$qr_id=$_COOKIE["id_data"];
 		$flag=true;
 	}
 	else
@@ -27,14 +25,13 @@
 				
 			if($flag==false)
 			{
-				$_SESSION["data"]=$qr_id;
 				$time=time();
 				$time=date("M d, Y H:i:s",$time);
 				$expire_time=strtotime($time)+7200;
 				
 				$sql = "update qr_code set counter='1', time='$expire_time', person='$person' where qr_id='$qr_id'";
 				mysqli_query( $con, $sql );
-				setcookie("data",$qr_id,$expire_time,"/");
+				setcookie("id_data",$qr_id,$expire_time,"/");
 				$expire_time=date("M d, Y H:i:s",$expire_time);
 			}
 			else
@@ -65,6 +62,8 @@
 	}
 	mysqli_close( $con );
 ?>
+<!DOCTYPE html>
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="description" content="">	
@@ -105,7 +104,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -160,10 +159,11 @@
 		</div>
 		<p id="demo"></p> 
 	</div>
+	
+	<?php
+	include("common/footer.php");
+	?>
 </div>
-<?php
-include("common/footer.php");
-?>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="javascript/bootstrap.min.js"></script>

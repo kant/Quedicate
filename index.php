@@ -1,8 +1,8 @@
 <?php
-if(isset($_COOKIE["data"]))
-	echo "<script>window.location.href='destroy.php';</script>";
+if(isset($_COOKIE["id_data"]))
+	echo "<script>window.location.href='receipt.php';</script>";
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
