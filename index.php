@@ -35,6 +35,8 @@ if(isset($_COOKIE["id_data"]))
 		document.getElementById("fare").value=fare;
 	};
 </script>
+<!--Google AdSense -->
+<script data-ad-client="ca-pub-9999952994914935" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body>
